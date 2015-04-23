@@ -25,9 +25,13 @@
 							</div>
 							<div class="content-unit__description">	
 								<div class="content-unit__description__link">
-									<a href="{% url 'detail' post.id %}">{{post.title}}</a>
+									<a href="{% url 'detail' post.id %}">
+										{{post.title}}
+									</a>
 								</div>
-								<p>{{post.description}}</p>					
+								<p>
+									{{post.description}}
+								</p>					
 							</div>
 						</div>
 					{%endfor%}
