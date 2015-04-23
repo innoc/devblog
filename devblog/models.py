@@ -18,11 +18,18 @@ class basePost(models.Model):
 		('gr','Graphic design'),
 	)
 
+	POST_TYPE = (
+		('i', 'image'),
+		('v', 'video'),
+	)
+
 	author = models.ForeignKey('auth.User', default=0)
 	description = models.TextField(default="enter a value")
 	category = models.CharField(max_length=5, choices=CATEGORY_CHOICES,default="bk")
 	created_date = models.DateTimeField(default=timezone.now)
 	title = models.CharField(max_length=100)
+	post_type = models.CharField(max_length=5, choices=POST_TYPE,default="")
+
 
 	class Meta:
 		abstract = True
@@ -35,6 +42,7 @@ class ImagePost(basePost):
 		This class Inherits from abstract parent class (basePost)
 	"""  
 	image = models.ImageField(upload_to='.')
+
 
 	def publish(self):
 	  self.created_date = timezone.now()
