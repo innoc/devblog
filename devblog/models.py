@@ -19,29 +19,61 @@ class basePost(models.Model):
 	)
 
 	author = models.ForeignKey('auth.User', default=0)
-	description = models.TextField(default="null")
+	description = models.TextField(default="enter a value")
 	category = models.CharField(max_length=5, choices=CATEGORY_CHOICES,default="bk")
 	created_date = models.DateTimeField(default=timezone.now)
+	title = models.CharField(max_length=100)
+
+	class Meta:
+		abstract = True
+
+
+class ImagePost(basePost):
+	"""
+		DESCRIPTION
+		............
+		This class Inherits from abstract parent class (basePost)
+	"""  
+	image = models.ImageField(upload_to='.')
 
 	def publish(self):
 	  self.created_date = timezone.now()
 	  self.save()
 
 	def __str__(self):
-	  return self.title
-
-	class Meta:
-		abstract = True
-
-class ImagePost(basePost):
-	"""
-		This class Inherits from abstract parent class (basePost)
-	"""  
-	image = models.ImageField(upload_to='.')
+	  return str(self.author)
 
 
 class VideoPost(basePost):
 	"""
+		DESCRIPTION
+		............
 		This class inherits from abstract parent class (basePost)
 	"""
 	v_id = models.CharField(max_length=100)
+
+	def publish(self):
+	  self.created_date = timezone.now()
+	  self.save()
+
+	def __str__(self):
+	  return str(self.author)
+
+
+class UserAdditionalInfo(models.Model):
+	"""
+		DESCRIPTION
+		............
+		This class holds more information about the blog user
+	"""
+	CATEGORY_CHOICES = (
+		('m', 'Male'),
+		('f', 'Female'),
+	)
+	image = models.ImageField(upload_to='.')
+	user = models.ForeignKey('auth.User', default=0)
+	description = models.TextField(default="null")
+	gender = models.CharField(max_length=2, choices=CATEGORY_CHOICES, default="m")
+
+	def __str__(self):
+	  return str(self.user)
