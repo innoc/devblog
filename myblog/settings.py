@@ -7,25 +7,21 @@ https://docs.djangoproject.com/en/1.7/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
+from sys import path
+from os.path import join, dirname, abspath, basename, normpath 
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'vz&xrq4=f)sqr=5@&3+!rm+xctwr0!_kb+f9j-0ec*b6o!a6ra'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+__LOGGING_DIR_PREFIX = join(BASE_DIR, 'logs')
 
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -48,6 +44,25 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+LOGGING = { 
+    'version' : 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file':{ 
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': join(__LOGGING_DIR_PREFIX, 'apperror.log'),
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': True, 
+        },
+    },
+}
 
 ROOT_URLCONF = 'myblog.urls'
 

@@ -1,0 +1,23 @@
+<div class="header">
+	<div class="padded-unit">
+		<div class="padding-unit__post-info">
+			<div class="padding-unit__post-info--left">
+				
+			</div>
+			<div class="padding-unit__post-info--right">
+				<span class="green-font-style">{{image_post_count| length}} </span> <span class="grey-font">image post </span> <span class="green-font-style">{{video_post_count| length}} </span> <span class="grey-font">video post</span>
+			</div>
+		</div>
+		<div class="padded-unit__owner-name primary_link">
+			<a href="{% url ''%}">
+				{{owner_primary_info.username}}
+			</a>
+		</div>
+		<div class="dot"></div>
+		<div class="pulse">
+			<div class="padded-unit__owner-image">
+				<img src="{{owner_extra_info.image.url}}", height="40px" width="40px">
+			</div>
+		</div>
+	</div>
+</div>

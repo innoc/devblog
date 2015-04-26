@@ -1,0 +1,837 @@
+Not Found: /detail/4/i/
+Not Found: /detail/4/i/
+Something went wrong!
+Something went wrong!
+Internal Server Error: /detail/4/
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/dev/myblog/myblog/urls.py", line 7
+    try
+       ^
+SyntaxError: invalid syntax
+Internal Server Error: /detail/4/
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/dev/myblog/myblog/urls.py", line 12
+    except
+          ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    all_post = image_post_list + video_post_list
+NameError: global name 'image_post_list' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 22, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 546, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 463, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'detail' with arguments '(1, u'')' and keyword arguments '{}' not found. 1 pattern(s) tried: ['detail/(?P<post_id>\\d+)/(?P<post_type>[-\\w]+)/$']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 22, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 546, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 463, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'detail' with arguments '(1, u'')' and keyword arguments '{}' not found. 1 pattern(s) tried: ['detail/(?P<post_id>\\d+)/(?P<post_type>[-\\w]+)/$']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 22, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 833, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 266, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 372, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 588, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '('%m/%d/%Y')' from 'post.created_date.strftime('%m/%d/%Y')'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 22, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 833, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 288, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 343, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'else', expected 'empty' or 'endfor'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 22, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 833, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 288, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 343, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'else', expected 'empty' or 'endfor'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 22, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 833, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 288, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 343, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'else', expected 'empty' or 'endfor'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 19, in post_list
+    user_additional_info = UserAdditionalInfo.objects.get(fk = 1)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 345, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 691, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 709, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1287, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1314, in _add_q
+    current_negated=current_negated, connector=connector)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1138, in build_filter
+    lookups, parts, reffed_aggregate = self.solve_lookup_type(arg)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1076, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1383, in names_to_path
+    self.raise_field_error(opts, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1389, in raise_field_error
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'fk' into field. Choices are: description, gender, id, image, user, user_id
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 19, in post_list
+    user_additional_info = UserAdditionalInfo.fields
+AttributeError: type object 'UserAdditionalInfo' has no attribute 'fields'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 19, in post_list
+    user_additional_info = UserAdditionalInfo.attribute
+AttributeError: type object 'UserAdditionalInfo' has no attribute 'attribute'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 24, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post, 'owner_info': user_additional_info})
+NameError: global name 'user_additional_info' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 24, in post_list
+    image_post_count = image_post_list.count()
+TypeError: count() takes exactly one argument (0 given)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 21, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 21, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 21, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 21, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: Template library devblog.templatetags.blog_extra does not have a variable named 'register'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'blog_extra' is not a valid tag library: ImportError raised loading devblog.templatetags.blog_extra: No module named models
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dev/myblog/devblog/views.py", line 20, in post_list
+    return render(request,'devblog/post_list.html', {'posts':all_post})
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 48, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/base.py", line 1216, in render
+    t = get_template(file_name)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/dev/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: header.html

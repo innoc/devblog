@@ -23,7 +23,7 @@ class basePost(models.Model):
 		('v', 'video'),
 	)
 
-	author = models.ForeignKey('auth.User', default=0)
+	author = models.ForeignKey('auth.User', default=0)	
 	description = models.TextField(default="enter a value")
 	category = models.CharField(max_length=5, choices=CATEGORY_CHOICES,default="bk")
 	created_date = models.DateTimeField(default=timezone.now)
@@ -84,4 +84,4 @@ class UserAdditionalInfo(models.Model):
 	gender = models.CharField(max_length=2, choices=CATEGORY_CHOICES, default="m")
 
 	def __str__(self):
-	  return str(self.user)
+		return str(self.user)
