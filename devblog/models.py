@@ -41,7 +41,7 @@ class ImagePost(basePost):
 		............
 		This class Inherits from abstract parent class (basePost)
 	"""  
-	image = models.ImageField(upload_to='.')
+	image = models.ImageField(upload_to='imagefile/')
 
 
 	def publish(self):
@@ -78,7 +78,7 @@ class UserAdditionalInfo(models.Model):
 		('m', 'Male'),
 		('f', 'Female'),
 	)
-	image = models.ImageField(upload_to='.')
+	image = models.ImageField(upload_to='imagefile/')
 	user = models.ForeignKey('auth.User', default=0)
 	description = models.TextField(default="null")
 	gender = models.CharField(max_length=2, choices=CATEGORY_CHOICES, default="m")
